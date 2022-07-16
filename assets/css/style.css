@@ -1,0 +1,46 @@
+:root {
+    --clr1: #1B9AAA;
+    --clr2: #DDDBCB;
+    --clr3: oldlace;
+    --dark: #050505;
+    --light: white;
+}
+
+header{
+    background-color: var(--clr2);
+    color: var(--clr1);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+
+header nav li{
+    display: inline;
+    border: 2px solid var(--dark);
+    padding: 5px;
+    border-collapse: collapse;
+   
+    
+   
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr1);
+}
+
+body {
+    background-color: var(--clr3);
+}
+
+.banner{
+    background-image: url("../images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
