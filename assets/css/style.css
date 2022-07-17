@@ -6,41 +6,92 @@
     --light: white;
 }
 
+
 header{
-    background-color: var(--clr2);
-    color: var(--clr1);
-    padding: 20px 0px;
+    background-image: linear-gradient(to right,var(--clr3),var(--clr1));
+    color: var(--light);
+    padding: 15px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    
 
+}
+
+header h1{
+    color: var(--clr1);
+    padding: 1%;
+    
 }
 
 
 
 header nav li{
     display: inline;
-    border: 2px solid var(--dark);
+    border-bottom: 2px solid var(--light);
     padding: 5px;
     border-collapse: collapse;
+    margin-right: 10px;
    
-    
    
 }
 
 a{
     text-decoration: none;
-    color: var(--clr1);
+    color: var(--clr3);
 }
 
 body {
     background-color: var(--clr3);
 }
 
-.banner{
-    background-image: url("../images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+.heroBanner{
+    background-image: url(../images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
     background-size: cover;
-    height: 400px;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heroBanner p {
+    color: var(--light);
+    text-shadow: 4px 4px 16px #050505;
+    display: inline;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/*  Change header/nav bar when page shrinks  */
+
+@media screen and (max-width: 500px) {
+    header {
+        background-image: var(--clr3);
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+    
+      header nav {
+        background-color: var(--clr1);
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: flex;
+        font-size: 10vp;
+    }
 }
 
