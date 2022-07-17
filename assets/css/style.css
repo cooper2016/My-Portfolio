@@ -6,6 +6,31 @@
     --light: white;
 }
 
+header{
+    background-image: linear-gradient(to right, var(--clr1),var(--clr3));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1{
+    color: var(--clr3);
+    font-size: larger;
+}
+
+header nav{
+    display: inline;
+    
+}
+header a{
+    color: var(--clr1);
+    text-decoration: underline;
+    white-space: nowrap;
+    margin: 0px 10px 0px 0px;
+}
 
 
 .heroBanner{
@@ -22,10 +47,35 @@
 .heroBanner p {
     color: var(--light);
     text-shadow: 4px 4px 16px #050505;
-    display: inline;
     font-size: 40px;
     font-family: cursive;
     text-align: center;
 }
 
+@media screen and (max-width: 645px) {
+    header {
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 10px;
+      background-color: var(--clr1);
+    }
+  
+    header nav {
+      justify-content: center;
+      background-color: var(--clr3);
+      width: 100%;
+      padding: 10px;
+    }
+
+    header a{
+        margin-bottom: 10px;
+    }
+
+
+  
 
