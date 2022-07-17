@@ -7,45 +7,6 @@
 }
 
 
-header{
-    background-image: linear-gradient(to right,var(--clr3),var(--clr1));
-    color: var(--light);
-    padding: 15px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-
-header h1{
-    color: var(--clr1);
-    padding: 1%;
-    
-}
-
-
-
-header nav li{
-    display: inline;
-    border-bottom: 2px solid var(--light);
-    padding: 5px;
-    border-collapse: collapse;
-    margin-right: 10px;
-   
-   
-}
-
-a{
-    text-decoration: none;
-    color: var(--clr3);
-}
-
-body {
-    background-color: var(--clr3);
-}
 
 .heroBanner{
     background-image: url(../images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
@@ -67,31 +28,4 @@ body {
     text-align: center;
 }
 
-/*  Change header/nav bar when page shrinks  */
-
-@media screen and (max-width: 500px) {
-    header {
-        background-image: var(--clr3);
-        padding: 0;
-        justify-content: center;
-        text-align: center;
-      }
-    
-      header h1 {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-        font-size: 10vw;
-      }
-    
-      header nav {
-        background-color: var(--clr1);
-        justify-content: center;
-        width: 100%;
-        padding: 15px;
-        display: flex;
-        flex-wrap: flex;
-        font-size: 10vp;
-    }
-}
 
