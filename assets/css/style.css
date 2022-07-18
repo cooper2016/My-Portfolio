@@ -14,6 +14,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    font-size: 25px;
 }
 
 header h1{
@@ -32,12 +33,34 @@ header a{
     margin: 0px 10px 0px 0px;
 }
 
+header a:hover {
+    background-color: var(--clr1);
+    padding: 3px;
+    color: var(--clr3);
+}
+
+main{
+    background-color: var(--clr1);
+    
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--light);
+    
+}
+
 
 .heroBanner{
-    background-image: url(../images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+    background-image: url(../images/suleyman-coskun-a1sw1TdEP5g-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +75,39 @@ header a{
     text-align: center;
 }
 
-@media screen and (max-width: 645px) {
+
+
+
+section h2{
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 3px solid var(--light);
+    padding-right: 10px;
+    font-size: 1.5rem;
+    
+
+}
+
+#aboutMe p{
+    margin-left: 25px;
+}
+
+
+#contactMe address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+address a{
+    
+    
+}
+
+
+
+@media screen and (max-width: 941px) {
     header {
       justify-content: center;
       text-align: center;
@@ -75,4 +130,7 @@ header a{
     header a{
         margin-bottom: 10px;
     }
+}
+@media screen and (max-width: 941px) {
+
 }
