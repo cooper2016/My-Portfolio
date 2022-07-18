@@ -1,3 +1,4 @@
+/*  Main colors  */
 :root {
     --clr1: #1B9AAA;
     --clr2: #DDDBCB;
@@ -5,6 +6,8 @@
     --dark: #050505;
     --light: white;
 }
+
+/* Header Formatting */
 
 header{
     background-image: linear-gradient(to right, var(--clr1),var(--clr3));
@@ -39,23 +42,35 @@ header a:hover {
     color: var(--clr3);
 }
 
+
+
 main{
     background-color: var(--clr1);
     
 }
 
-main section{
+/* containers */ 
+
+section{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: stretch;
-    justify-content: space-between;
     padding: 10px;
     color: var(--light);
+    flex: 0 0 79%;
     
 }
+section h2{
+    flex: 0 0 20%;
+    text-align: right;
+    border-right: 3px solid var(--light);
+    padding-right: 10px;
+    font-size: 1.5rem;
+    
 
+}
 
+/* Hero Banner */ 
 .heroBanner{
     background-image: url(../images/suleyman-coskun-a1sw1TdEP5g-unsplash.jpg);
     background-size: cover;
@@ -75,37 +90,82 @@ main section{
     text-align: center;
 }
 
+/* Container for Work Section */
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+/* Each project card*/
 
-
-section h2{
-    flex: 0 0 20%;
-    text-align: right;
-    border-right: 3px solid var(--light);
-    padding-right: 10px;
-    font-size: 1.5rem;
-    
+.project {
+    display: flex;
+    align-items: flex-end;
+    border: 3px solid var(--dark);
+    min-height: 200px;
+    max-height: 200px;
+    flex: 1 1 50%;
 
 }
 
+.project h3{
+    background-color: var(--dark);
+    padding: 15px;
+
+}
+
+/* First project larger */
+.project:first-child{
+    min-height: 350px;
+    flex-basis: 100%;
+}
+
+/* Projects card background */
+
+.hariseon {
+    background-image: url(../images/Screen\ Shot\ 2022-07-18\ at\ 5.43.13\ PM.png);
+    background-size: 100% 100%;
+}
+
+.calculator {
+    background-image: url(../images/recha-oktaviani-h2aDKwigQeA-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+.game {
+    background-image: url(../images/fredrick-tendong-6ou8gWpS9ns-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+
+
 #aboutMe p{
     margin-left: 25px;
+}
+
+/* Contact Me section */
+
+
+#contactMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
 
 
 #contactMe address{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
 }
 
-address a{
-    
+#contactMe address a{
+    padding: 10px;
     
 }
 
-
+/* Adjust Header Section when you shrink page */ 
 
 @media screen and (max-width: 941px) {
     header {
@@ -130,7 +190,4 @@ address a{
     header a{
         margin-bottom: 10px;
     }
-}
-@media screen and (max-width: 941px) {
-
 }
