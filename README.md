@@ -7,6 +7,11 @@ My portfolio is used to showcase the projects I have made. I will continuely upd
 This is what the webpage should look like: 
 
 
+
+![My Portfolio](./assets/images/Portfolio%20Screenshot.png)
+
+
+
 # Link to Application
 
-To view my portfolio webpage open the following link in your browser: 
+To view my portfolio webpage open the following link in your browser: [My Portfolio](https://cooper2016.github.io/My-Portfolio/)
